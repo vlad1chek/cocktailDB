@@ -1,6 +1,8 @@
 import React from 'react';
 import {View, Text, SectionList, ActivityIndicator} from 'react-native';
 import DrinkItem from '../../components/DrinkItem';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
 import {useFetchDrinks} from '../../hooks/api/useFetchDrinks';
 import {useDrinksDispatch} from '../../contexts/DrinksContext';
 import {getDrinks} from '../../api/apiRequests';
@@ -15,19 +17,11 @@ export default function DrinksScreen() {
   };
 
   if (loading) {
-    return (
-      <View style={styles.container}>
-        <ActivityIndicator size={'large'} />
-      </View>
-    );
+    return <Loading />;
   }
 
   if (error) {
-    return (
-      <View style={styles.container}>
-        <Text>Something went wrong. Try to reload the app</Text>
-      </View>
-    );
+    return <Error />;
   }
 
   return (
