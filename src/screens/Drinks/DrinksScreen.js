@@ -29,10 +29,9 @@ export default function DrinksScreen() {
       <SectionList
         sections={drinksList}
         keyExtractor={({id}) => id}
-        renderItem={({item: {name, img}}) => {
-          console.log(img);
-          return <DrinkItem name={name} url={img} />;
-        }}
+        renderItem={({item: {name, img}}) => (
+          <DrinkItem name={name} url={img} />
+        )}
         onEndReached={handleEnd}
         onEndReachedThreshold={0}
         renderSectionHeader={({section: {title}}) => (

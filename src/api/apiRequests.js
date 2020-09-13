@@ -5,7 +5,6 @@ const apiUrl = 'https://www.thecocktaildb.com/api/json/v1/1';
 export const fetchCategories = async (dispatch) => {
   try {
     const {data} = await axios.get(`${apiUrl}/list.php?c=list`);
-    console.log('categories', data);
     const categoriesList = data.drinks.map((drink) => ({
       name: drink.strCategory,
       isSelected: true,
@@ -25,7 +24,6 @@ export const getDrinksByCategory = async (categoryName) => {
       img: strDrinkThumb,
       name: strDrink,
     }));
-    console.log('drinks', drinks.slice(0, 1));
     return {
       title: categoryName,
       data: drinks.slice(0, 4),
