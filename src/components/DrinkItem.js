@@ -38,5 +38,6 @@ const styles = StyleSheet.create({
     paddingRight: 0,
     color: '#7E7E7E',
     fontSize: 16,
+    fontFamily: 'Roboto-Regular',
   },
 });

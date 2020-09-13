@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     padding: 17,
     color: '#fff',
     fontSize: 16,
+    fontFamily: 'Roboto-Bold',
   },
 });
 

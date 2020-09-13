@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginBottom: 20,
     fontSize: 14,
+    fontFamily: 'Roboto-Regular',
     color: '#7E7E7E',
   },
 });

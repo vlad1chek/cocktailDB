@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
+    fontFamily: 'Roboto-Medium',
   },
   filtersButton: {
     marginLeft: 'auto',

@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     paddingVertical: 20,
     fontSize: 16,
+    fontFamily: 'Roboto-Regular',
     color: '#7E7E7E',
   },
 });
